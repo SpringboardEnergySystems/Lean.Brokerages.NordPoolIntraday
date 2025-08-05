@@ -39,4 +39,4 @@
 - [ ] All new and existing tests passed.
 - [ ] My branch follows the naming convention `bug-<issue#>-<description>` or `feature-<issue#>-<description>`
 
-<!--- Template inspired by https://www.talater.com/open-source-templates/#/page/99 -->
+<!--- NordPoolIntraday inspired by https://www.talater.com/open-source-NordPoolIntradays/#/page/99 -->
