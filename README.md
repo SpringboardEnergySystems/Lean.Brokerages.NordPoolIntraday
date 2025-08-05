@@ -1,11 +1,11 @@
-![lean-brokerage-template](https://user-images.githubusercontent.com/18473240/131904120-f67dab9c-cc6f-4c08-83e9-5d3ffafdb85d.png)
+![lean-brokerage-NordPoolIntraday](https://user-images.githubusercontent.com/18473240/131904120-f67dab9c-cc6f-4c08-83e9-5d3ffafdb85d.png)
 
 
-# Lean.Brokerages.Template
+# Lean.Brokerages.NordPoolIntraday
 
-[![Build Status](https://github.com/QuantConnect/Lean.Brokerages.Template/workflows/Build%20%26%20Test/badge.svg)](https://github.com/QuantConnect/Lean.Brokerages.Template/actions?query=workflow%3A%22Build%20%26%20Test%22)
+[![Build Status](https://github.com/QuantConnect/Lean.Brokerages.NordPoolIntraday/workflows/Build%20%26%20Test/badge.svg)](https://github.com/QuantConnect/Lean.Brokerages.NordPoolIntraday/actions?query=workflow%3A%22Build%20%26%20Test%22)
  
-Template Brokerage Plugin for [Lean](https://github.com/QuantConnect/Lean)
+NordPoolIntraday Brokerage Plugin for [Lean](https://github.com/QuantConnect/Lean)
 
 See the [brokerage development guide](https://www.quantconnect.com/tutorials/open-source/brokerage-development-guide)
 
@@ -18,10 +18,10 @@ See the [brokerage development guide](https://www.quantconnect.com/tutorials/ope
 4. Create a new brokerage development account.
 5. Generate API keys.
 6. 🍴📦Fork QuantConnect brokerage repository.
-7. Rename all template to new brokerage names by a skeleton.
+7. Rename all NordPoolIntraday to new brokerage names by a skeleton.
     - for instance:
-        - `TemplateBrokerage.cs` -> `BinanceBrokerage.cs`
-        - `public class TemplateBrokerage` -> `public class InteractiveBrokersBrokerage`
+        - `NordPoolIntradayBrokerage.cs` -> `BinanceBrokerage.cs`
+        - `public class NordPoolIntradayBrokerage` -> `public class InteractiveBrokersBrokerage`
 8. Remove: not used parts (for instance: downloader lean has generic now, but some brokerages support downloading trading pairs process like some crypto exchanges) - [Lean download data provider source](https://github.com/QuantConnect/Lean/tree/master/DownloaderDataProvider), [Bybit Exchange Info Downloader](https://github.com/QuantConnect/Lean.Brokerages.ByBit/blob/master/QuantConnect.BybitBrokerage.ToolBox/BybitExchangeInfoDownloader.cs)
 9. Implement API connection (simple request) infrastructure (generic method that send GET/POST requests) 
 10. If brokerage support several steps of authentication like **OAuth 2** - [TradeStation example](https://github.com/QuantConnect/Lean.Brokerages.TradeStation/blob/master/QuantConnect.TradeStationBrokerage/Api/TokenRefreshHandler.cs)
